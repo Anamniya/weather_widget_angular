@@ -1,0 +1,90 @@
+{
+    "unit_type":"metric",
+    "unit": {
+        "standard":{
+            "temp": "°K",
+            "wind": "m/s",
+            "pressure": "hPa",
+            "humidity": "%",
+            "visibility": "km"
+        },
+        "metric":{
+            "temp": "°C",
+            "wind": "m/s",
+            "pressure": "hPa",
+            "humidity": "%",
+            "visibility": "km"
+        },
+        "imperial":{
+            "temp":"°F",
+            "wind": "mph",
+            "pressure": "hPa",
+            "humidity": "%",
+            "visibility": "mi"
+        }
+    },
+    "update": {
+        "interval": 100000
+    },
+    "sources": {
+        "url": "api.openweathermap.org/data/2.5/weather",
+        "api_key": "please, use you key"
+    },
+    "city_list": [
+        "Current City",
+        "Amsterdam",
+        "Andorra la Vella",
+        "Ankara",
+        "Athens",
+        "Baku",
+        "Belgrade",
+        "Berlin",
+        "Bern",
+        "Bratislava",
+        "Brussels",
+        "Bucharest",
+        "Budapest",
+        "Chisinau",
+        "Copenhagen",
+        "Dublin",
+        "Helsinki",
+        "Kyiv",
+        "Lisbon",
+        "Ljubljana",
+        "London",
+        "Luxembourg",
+        "Madrid",
+        "Minsk",
+        "Monaco",
+        "Moscow",
+        "Nicosia",
+        "Nur-Sultan",
+        "Oslo",
+        "Paris",
+        "Podgorica",
+        "Prague",
+        "Pristina",
+        "Reykjavik",
+        "Riga",
+        "Rome",
+        "San Marino",
+        "Sarajevo",
+        "Skopje",
+        "Sofia",
+        "Stockholm",
+        "Tallinn",
+        "Tbilisi",
+        "Vaduz",
+        "Valletta",
+        "Vatican",
+        "Vienna",
+        "Vilnius",
+        "Warsaw",
+        "Yerevan",
+        "Zagreb",
+        "Tirana"
+    ]
+}
+
+
+

@@ -1,0 +1,92 @@
+@import "../../variables.scss";
+
+.setting {
+  position: absolute;
+  overflow: auto;
+  width: 222px;
+  // height: 523px;
+  height: 252px;
+  background-color: $background-color_1a;
+  background: $background-gradient;
+  color: $font-color-light;
+  border-radius: $border-radius-main;
+  margin: -1px 0px 0px -1px;
+  padding: $padding-all;
+}
+
+.close {
+  width: 215px;
+  height: 20px;
+  text-align: end;
+  font-weight: $bold-text;
+  cursor: pointer;
+}
+
+.header {
+  height: 20px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5px;
+  justify-items: center;
+}
+
+.wigetes {
+  padding: $padding-all;
+}
+
+.header {
+  text-align: center;
+  font-weight: $bold-text;
+}
+
+.select_city {
+  width: 150px;
+  height: 20px;
+  border-radius: $border-radius-item;
+  resize: none;
+}
+
+.btn {
+  width: 40px;
+  height: 23px;
+  background-color: $background-color_items;
+  border: $border-size solid $border-color-light;
+  border-radius: $border-radius-item;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.city_list {
+  width: 218px;
+  margin-top: 10px;
+}
+
+.city {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $background-color_items;
+  border: $border-size solid $border-color-light;
+  border-radius: $border-radius-item;
+  margin: 5px;
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+}
+
+.city_name {
+  overflow: hidden;
+}
+
+.trash {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}

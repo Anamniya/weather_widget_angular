@@ -1,0 +1,10 @@
+<div class="weather">
+  <div class="set" (click)="openSetting()"><span>&#9881;</span></div>
+  <app-setting [ngClass]="{'hidden': setting_visible == false }" [available_cities]="available_cities"
+    [cities]="city_list" (sentSelectedCity)="updateCities($event)"></app-setting>
+  <div class="cities">
+    <div *ngFor="let city of city_list">
+      <app-city [city_item]="city" [config]="config"></app-city>
+    </div>
+  </div>
+</div>

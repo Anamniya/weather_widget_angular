@@ -1,0 +1,26 @@
+<div class="city">
+  <div class="main_info">
+    <div class="city_name">{{ weather_data.name }}</div>
+    <div class="main">{{ weather_data.weather[0].main }}</div>
+    <div class="temp">{{ weather_data.main.temp }} {{ config.unit[config.unit_type].temp }}</div>
+    <div class="feels_like">feels like {{ weather_data.main.feels_like }} {{ config.unit[config.unit_type].temp }}</div>
+  </div>
+  <div class="other_info">
+    <div class="wind item">
+      <div class="item_name">wind</div>
+      <div>{{ weather_data.wind.speed }} {{ config.unit[config.unit_type].wind }}</div>
+    </div>
+    <div class="pressure item">
+      <div class="item_name">pressure</div>
+      <div>{{ weather_data.main.pressure }} {{ config.unit[config.unit_type].pressure }}</div>
+    </div>
+    <div class="humidity item">
+      <div class="item_name">humidity</div>
+      <div>{{  weather_data.main.humidity }} {{ config.unit[config.unit_type].humidity }}</div>
+    </div>
+    <div class="visibility item">
+      <div class="item_name">visibility</div>
+      <div>{{ weather_data.visibility }} {{ config.unit[config.unit_type].visibility }}</div>
+    </div>
+  </div>
+</div>

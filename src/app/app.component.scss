@@ -1,0 +1,37 @@
+@import "../variables.scss";
+
+.weather {
+    display: grid;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 242px;
+    // height: 543px;
+    height: 272px;
+    background-color: $background-color_01a;
+    border: $border-size solid $border-color-dark;
+    border-radius: $border-radius-main;
+    margin: 50px;
+    font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $font-color-dark;
+}
+
+.cities>div {
+    border-bottom: $border-size solid $border-color-dark;
+}
+
+.cities :last-child {
+    border-bottom: 0px;
+}
+
+.set {
+    position: absolute;
+    margin-left: 210px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
