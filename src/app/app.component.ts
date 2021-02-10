@@ -12,6 +12,8 @@ export class AppComponent {
   title = 'weather-widget';
   config: object
   setting_visible: boolean
+  arrow_top_visible: boolean
+  arrow_bottom_visible: boolean
   city_list: Array<string>
   available_cities: Array<string>
 
@@ -19,6 +21,8 @@ export class AppComponent {
 
   ngOnInit() {
     this.setting_visible = false
+    this.arrow_top_visible = false
+    this.arrow_bottom_visible = false
     const selectedCity = localStorage.getItem('selected_city')
     this.city_list = selectedCity ? selectedCity.split(',') : ['Current City']
     this.getConfig()
@@ -26,6 +30,8 @@ export class AppComponent {
 
   openSetting() {
     this.setting_visible = true
+    this.arrow_bottom_visible = false
+    this.arrow_top_visible = false
   }
 
   updateCities(selectedCity: Array<string>) {
@@ -48,4 +54,26 @@ export class AppComponent {
         this.available_cities = this.config['city_list']
       });
   }
+
+  arrowShow(event) {
+    if (this.setting_visible) { return }
+
+    if (event.target.scrollHeight === event.target.scrollTop + event.target.clientHeight) {
+      this.arrow_bottom_visible = false
+    } else {
+      this.arrow_bottom_visible = true
+    }
+    
+    if (event.target.scrollTop === 0) {
+      this.arrow_top_visible = false
+    } else {
+      this.arrow_top_visible = true
+    }
+  }
+
+  arrowHide() {
+    this.arrow_bottom_visible = false
+    this.arrow_top_visible = false
+  }
 }
+

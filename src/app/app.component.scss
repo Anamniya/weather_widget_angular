@@ -3,10 +3,8 @@
 .weather {
     display: grid;
     overflow: auto;
-    box-sizing: border-box;
-    width: 242px;
-    // height: 543px;
-    height: 272px;
+    width: 240px;
+    height: $container-height;
     background-color: $background-color_01a;
     border: $border-size solid $border-color-dark;
     border-radius: $border-radius-main;
@@ -30,6 +28,36 @@
     margin-left: 210px;
     font-size: 30px;
     cursor: pointer;
+}
+
+.arrow {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: inherit;
+    height: $arrow-height;
+    background-color: $background-color_1a;
+    font-size: 30px;
+    font-weight: $bold-text;
+    pointer-events: none;
+}
+
+.arrow_bottom {
+    background: linear-gradient(180deg,
+            $background-color_01a 0%, 
+            $background-color_1a 100%);
+    color: $font-color-light;
+    border-radius: 0 0 $border-radius-main $border-radius-main;
+    margin-top: $margin-top-arrow-bottom;
+}
+
+.arrow_top {
+    background: linear-gradient(0deg,
+            $background-color_01a 0%,
+            $background-color_1a 100%);
+    color: $font-color-light;
+    border-radius: $border-radius-main $border-radius-main 0 0;
 }
 
 .hidden {

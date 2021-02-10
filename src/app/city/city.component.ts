@@ -30,7 +30,6 @@ export class CityComponent implements OnInit {
     if (this.config) {
       if (this.city_item === 'Current City') {
         this.location()
-        // this.getCites()
       } else {
         this.getCites()
       }

@@ -3,14 +3,12 @@
 .setting {
   position: absolute;
   overflow: auto;
-  width: 222px;
-  // height: 523px;
-  height: 252px;
+  width: 220px;
+  height: $setting-height;
   background-color: $background-color_1a;
   background: $background-gradient;
   color: $font-color-light;
-  border-radius: $border-radius-main;
-  margin: -1px 0px 0px -1px;
+  border-radius: $border-radius-main - 1px;
   padding: $padding-all;
 }
 
