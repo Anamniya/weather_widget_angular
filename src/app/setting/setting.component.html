@@ -2,11 +2,12 @@
   <div class="close" (click)="done()">Done</div>
   <div class="header">Selected city:</div>
   <div class="input">
-    <input class="select_city" placeholder="start typing" list="city_list" [(ngModel)]="city" />
+    <input (change)="select()" class="select_city" placeholder="start typing" list="city_list" [(ngModel)]="city" />
     <datalist id="city_list">
-      <option *ngFor="let city of city_list" [value]="city"></option>
+        <option *ngFor="let city of city_list">
+          <div *ngIf="!selected_city.includes(city)">{{city}}</div>
+        </option>
     </datalist>
-    <div class="btn" (click)="select()">Add</div>
   </div>
   <div cdkDropList class="city_list" (cdkDropListDropped)="drop($event)">
     <div class="city" *ngFor="let city of selected_city let i = index" cdkDrag>

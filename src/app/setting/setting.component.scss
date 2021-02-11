@@ -2,7 +2,7 @@
 
 .setting {
   position: absolute;
-  overflow: auto;
+  // overflow: auto;
   width: 220px;
   height: $setting-height;
   background-color: $background-color_1a;
@@ -43,25 +43,17 @@
 }
 
 .select_city {
-  width: 150px;
+  width: 200px;
   height: 20px;
   border-radius: $border-radius-item;
   resize: none;
 }
 
-.btn {
-  width: 40px;
-  height: 23px;
-  background-color: $background-color_items;
-  border: $border-size solid $border-color-light;
-  border-radius: $border-radius-item;
-  margin-left: 5px;
-  text-align: center;
-}
-
 .city_list {
+  overflow-y: scroll;
   width: 218px;
-  margin-top: 10px;
+  height: $container-height - 122px;
+  margin-top: 15px;
 }
 
 .city {

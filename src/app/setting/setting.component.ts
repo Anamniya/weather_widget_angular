@@ -27,7 +27,7 @@ export class SettingComponent implements OnInit {
     this.selected_city = this.cities
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   done() {
     if (!this.selected_city.length) { this.selected_city = ['Current City'] }
@@ -38,14 +38,24 @@ export class SettingComponent implements OnInit {
   }
 
   select() {
+    this.find()
     if (
       this.city !== '' &&
       !this.selected_city.includes(this.city) &&
       this.city_list.includes(this.city)
     ) {
       this.selected_city.push(this.city)
+      this.city = ''
     }
-    this.city = ''
+  }
+
+  find() {
+    const city = this.city_list.filter(
+      (city) => { return city.toLocaleLowerCase().includes(this.city.toLocaleLowerCase()) }
+    )
+    if (city[0]) {
+      this.city = city[0]
+    }
   }
 
   remove(i) {
