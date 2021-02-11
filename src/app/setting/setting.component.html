@@ -1,5 +1,5 @@
 <div class="setting">
-  <div class="close" (click)="done()">Done</div>
+  <div class="close"><span (click)="done()">Done</span></div>
   <div class="header">Selected city:</div>
   <div class="input">
     <input (change)="select()" class="select_city" placeholder="start typing" list="city_list" [(ngModel)]="city" />

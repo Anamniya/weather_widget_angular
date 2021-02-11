@@ -17,6 +17,9 @@
   height: 20px;
   text-align: end;
   font-weight: $bold-text;
+}
+
+.close>span{
   cursor: pointer;
 }
 
