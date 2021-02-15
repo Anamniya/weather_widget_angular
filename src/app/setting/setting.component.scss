@@ -2,13 +2,12 @@
 
 .setting {
   position: absolute;
-  // overflow: auto;
   width: 220px;
   height: $setting-height;
-  background-color: $background-color_1a;
+  background-color: $background-color;
   background: $background-gradient;
-  color: $font-color-light;
-  border-radius: $border-radius-main - 1px;
+  color: $font-color;
+  border-radius: $border-radius-main;
   padding: $padding-all;
 }
 
@@ -64,10 +63,10 @@
   grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
   box-sizing: border-box;
-  background-color: $background-color_items;
-  border: $border-size solid $border-color-light;
+  background-color: $background-color;
+  box-shadow: $box-shadow;
   border-radius: $border-radius-item;
-  margin: 5px;
+  margin: 7px;
   padding: 0 5px 0 5px;
   cursor: pointer;
 }

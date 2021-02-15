@@ -3,11 +3,11 @@
 .city {
   width: 220px;
   height: 250px;
-  color: $font-color-dark;
+  color: $font-color;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
-  background-color: $background-color_05a;
+  background-color: $background-color;
   padding: $padding-all;
 }
 

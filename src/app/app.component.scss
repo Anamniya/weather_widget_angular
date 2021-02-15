@@ -5,18 +5,18 @@
     overflow: auto;
     width: 240px;
     height: $container-height;
-    background-color: $background-color_01a;
-    border: $border-size solid $border-color-dark;
+    background-color: $background-color;
+    box-shadow: $box-shadow;
     border-radius: $border-radius-main;
     margin: 50px;
     font-family: $font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: $font-color-dark;
+    color: $font-color;
 }
 
 .cities>div {
-    border-bottom: $border-size solid $border-color-dark;
+    border-bottom: $border-size solid $border-color;
 }
 
 .cities :last-child {
@@ -37,27 +37,27 @@
     position: absolute;
     width: inherit;
     height: $arrow-height;
-    background-color: $background-color_1a;
-    font-size: 30px;
+    background-color: $background-color;
+    font-size: 20px;
     font-weight: $bold-text;
     pointer-events: none;
 }
 
 .arrow_bottom {
     background: linear-gradient(180deg,
-            $background-color_01a 0%, 
-            $background-color_1a 100%);
-    color: $font-color-light;
-    border-radius: 0 0 $border-radius-main - 1px $border-radius-main - 1px;
+    rgba(95, 95, 95, 0.1) 0%,
+    rgb(95, 95, 95) 100%);
+    color: $font-color;
+    border-radius: 0 0 $border-radius-main $border-radius-main;
     margin-top: $margin-top-arrow-bottom;
 }
 
 .arrow_top {
     background: linear-gradient(0deg,
-            $background-color_01a 0%,
-            $background-color_1a 100%);
-    color: $font-color-light;
-    border-radius: $border-radius-main - 1px $border-radius-main - 1px 0 0;
+    rgba(95, 95, 95, 0.1) 0%,
+    rgb(95, 95, 95, 1) 100%);
+    color: $font-color;
+    border-radius: $border-radius-main $border-radius-main 0 0;
 }
 
 .hidden {
