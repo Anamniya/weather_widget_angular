@@ -82,3 +82,8 @@
 .hidden {
   display: none;
 }
+
+.cdk-drag-preview{
+  color: $font-color;
+  font-family: $font-family;
+}
